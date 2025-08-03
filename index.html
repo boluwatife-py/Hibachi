@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hibachi Express - Premium Catering Service</title>
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <link rel="shortcut icon" href="./assets/LetsHibachi.webp" type="image/x-icon">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: { primary: "#dc2626", secondary: "#f97316" },
+            borderRadius: {
+              none: "0px",
+              sm: "4px",
+              DEFAULT: "8px",
+              md: "12px",
+              lg: "16px",
+              xl: "20px",
+              "2xl": "24px",
+              "3xl": "32px",
+              full: "9999px",
+              button: "8px",
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      :where([class^="ri-"])::before {
+        content: "\f3c2";
+      }
+    </style>
+  </head>
+  <body class="bg-white">
+    <!-- Header -->
+    <header class="bg-gray-100 border-b border-gray-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16">
+          <div class="flex items-center">
+            <div class="text-2xl font-['Pacifico'] text-primary w-10 h-10">
+              <img src="./assets/LetsHibachi.webp" alt="" />
+            </div>
+            <div class="ml-4 text-sm text-gray-600">Contact Us</div>
+            <div class="ml-4 flex items-center space-x-4">
+              <div class="flex items-center text-sm text-gray-600">
+                <div class="w-4 h-4 flex items-center justify-center mr-1">
+                  <i class="ri-message-line text-xs"></i>
+                </div>
+                text
+              </div>
+              <div class="flex items-center text-sm text-gray-600">
+                <div class="w-4 h-4 flex items-center justify-center mr-1">
+                  <i class="ri-mail-line text-xs"></i>
+                </div>
+                email
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-center items-center h-16">
+          <div class="flex space-x-8">
+            <a
+              href="#"
+              class="text-gray-900 font-medium hover:text-primary transition-colors"
+              >HOME</a
+            >
+            <a href="#" class="text-primary font-medium">MENU</a>
+            <div class="relative group">
+              <button
+                class="text-gray-900 font-medium hover:text-primary transition-colors flex items-center"
+              >
+                SERVICE AREA
+                <div class="w-4 h-4 flex items-center justify-center ml-1">
+                  <i class="ri-arrow-down-s-line text-sm"></i>
+                </div>
+              </button>
+              <div
+                class="absolute top-full left-0 mt-2 w-64 bg-white shadow-lg rounded-lg border border-gray-200 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50"
+              >
+                <div class="p-4">
+                  <div class="text-sm font-semibold text-gray-900 mb-2">
+                    Manhattan
+                  </div>
+                  <div class="text-sm text-gray-600 mb-1">Upper East Side</div>
+                  <div class="text-sm text-gray-600 mb-1">Midtown</div>
+                  <div class="text-sm text-gray-600 mb-3">
+                    Financial District
+                  </div>
+                  <div class="text-sm font-semibold text-gray-900 mb-2">
+                    Brooklyn
+                  </div>
+                  <div class="text-sm text-gray-600 mb-1">Park Slope</div>
+                  <div class="text-sm text-gray-600 mb-1">Williamsburg</div>
+                  <div class="text-sm text-gray-600">DUMBO</div>
+                </div>
+              </div>
+            </div>
+            <a
+              href="#"
+              class="text-gray-900 font-medium hover:text-primary transition-colors"
+              >GIFT CARDS</a
+            >
+            <a
+              href="#"
+              class="text-gray-900 font-medium hover:text-primary transition-colors"
+              >MEDIA</a
+            >
+            <a
+              href="#"
+              class="text-gray-900 font-medium hover:text-primary transition-colors"
+              >CONTACT US</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section
+      class="relative h-96 bg-black flex items-center justify-center"
+      style="
+        background-image: url('./assets/images/hibachi.jpg');
+        background-size: cover;
+        background-position: center;
+      "
+    >
+      <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+      <div class="relative z-10 text-center text-white">
+        <h1 class="text-5xl font-bold mb-4">Premium Hibachi Catering</h1>
+        <p class="text-xl mb-8">
+          Authentic Japanese teppanyaki experience delivered to your event
+        </p>
+        <button
+          class="bg-primary hover:bg-red-700 text-white px-8 py-3 !rounded-button font-semibold transition-colors whitespace-nowrap"
+        >
+          Book Your Event
+        </button>
+      </div>
+    </section>
+
+    <!-- Service Area Section -->
+    <section class="py-16 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold text-gray-900 mb-4">Service Areas</h2>
+          <p class="text-lg text-gray-600">
+            We deliver premium hibachi catering throughout the tri-state area
+          </p>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          <div class="relative">
+            <div
+              class="w-full h-96 bg-gray-200 rounded-lg overflow-hidden"
+              style="
+                background-image: url('./assets/images/map-placeholder.png');
+                background-size: cover;
+                background-position: center;
+              "
+            ></div>
+          </div>
+          <div class="space-y-6">
+            <div class="bg-white p-6 rounded-lg shadow-sm">
+              <h3 class="text-xl font-semibold text-gray-900 mb-4">
+                Check Service Availability
+              </h3>
+              <div class="space-y-4">
+                <div>
+                  <input
+                    type="text"
+                    placeholder="Enter your zip code"
+                    class="w-full px-4 py-3 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+                  />
+                </div>
+                <button
+                  class="w-full bg-primary hover:bg-red-700 text-white px-6 py-3 !rounded-button font-semibold transition-colors whitespace-nowrap"
+                >
+                  Check Availability
+                </button>
+              </div>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-sm">
+              <h3 class="text-xl font-semibold text-gray-900 mb-4">
+                Coverage Areas
+              </h3>
+              <div class="grid grid-cols-2 gap-4">
+                <div>
+                  <h4 class="font-medium text-gray-900 mb-2">Manhattan</h4>
+                  <ul class="text-sm text-gray-600 space-y-1">
+                    <li>Upper East Side</li>
+                    <li>Upper West Side</li>
+                    <li>Midtown</li>
+                    <li>Financial District</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 class="font-medium text-gray-900 mb-2">Brooklyn</h4>
+                  <ul class="text-sm text-gray-600 space-y-1">
+                    <li>Park Slope</li>
+                    <li>Williamsburg</li>
+                    <li>DUMBO</li>
+                    <li>Brooklyn Heights</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="py-16 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold text-gray-900 mb-4">
+            Our Catering Menu
+          </h2>
+          <p class="text-lg text-gray-600">
+            Fresh ingredients, authentic flavors, unforgettable experience
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
+          <!-- What's Included -->
+          <div class="bg-gray-50 p-8 rounded-lg">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6">
+              What's Included
+            </h3>
+            <div class="bg-primary text-white p-6 rounded-lg mb-6">
+              <p class="text-sm leading-relaxed">
+                Each person's own choice of 2 proteins, fried rice, cooked
+                vegetables, yum yum sauce, side salad and lots of sake!
+              </p>
+            </div>
+            <button
+              class="bg-primary hover:bg-red-700 text-white px-6 py-3 !rounded-button font-semibold transition-colors whitespace-nowrap mb-6"
+            >
+              DOWNLOAD MENU
+            </button>
+            <div class="w-full h-64 rounded-lg overflow-hidden">
+              <img
+                src="./assets/images/wi.jpg"
+                alt="Hibachi meal"
+                class="w-full h-full object-cover object-top"
+              />
+            </div>
+          </div>
+
+          <!-- Protein Choices -->
+          <div class="space-y-8">
+            <div class="bg-secondary text-white p-8 rounded-lg">
+              <h3 class="text-2xl font-bold mb-6">
+                Protein Choices (2 Per Person)
+              </h3>
+              <ul class="space-y-3">
+                <li class="flex items-center">
+                  <div class="w-2 h-2 bg-white rounded-full mr-3"></div>
+                  NY Strip Steak
+                </li>
+                <li class="flex items-center">
+                  <div class="w-2 h-2 bg-white rounded-full mr-3"></div>
+                  Chicken
+                </li>
+                <li class="flex items-center">
+                  <div class="w-2 h-2 bg-white rounded-full mr-3"></div>
+                  Shrimp
+                </li>
+                <li class="flex items-center">
+                  <div class="w-2 h-2 bg-white rounded-full mr-3"></div>
+                  Scallops
+                </li>
+                <li class="flex items-center">
+                  <div class="w-2 h-2 bg-white rounded-full mr-3"></div>
+                  Salmon
+                </li>
+                <li class="flex items-center">
+                  <div class="w-2 h-2 bg-white rounded-full mr-3"></div>
+                  Tofu (Vegetarian & Vegan option)
+                </li>
+              </ul>
+              <p class="text-sm mt-6 opacity-90">
+                Each person gets to choose their own 2 proteins from the list
+                above
+              </p>
+            </div>
+
+            <div class="bg-secondary text-white p-8 rounded-lg">
+              <h3 class="text-2xl font-bold mb-6">
+                Upgraded Proteins & Add Ons
+              </h3>
+              <div class="space-y-4">
+                <div class="text-sm font-semibold mb-3">Upgrade Choices:</div>
+                <ul class="space-y-2 text-sm">
+                  <li class="flex items-center">
+                    <div class="w-2 h-2 bg-white rounded-full mr-3"></div>
+                    Filet Mignon protein upgrade +$5
+                  </li>
+                  <li class="flex items-center">
+                    <div class="w-2 h-2 bg-white rounded-full mr-3"></div>
+                    Lobster Tail Protein Upgrade +$10
+                  </li>
+                </ul>
+                <p class="text-sm mt-4 opacity-90">
+                  (you can choose to upgrade your protein choices with the
+                  options above)
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Booking Section -->
+    <section class="py-16 bg-gray-50">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold text-gray-900 mb-4">Book Your Event</h2>
+          <p class="text-lg text-gray-600">
+            Let us bring the hibachi experience to your next celebration
+          </p>
+        </div>
+
+        <div class="bg-white p-8 rounded-lg shadow-sm">
+          <form class="space-y-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div>
+                <label class="block text-sm font-medium text-gray-700 mb-2"
+                  >Event Date</label
+                >
+                <input
+                  type="date"
+                  class="w-full px-4 py-3 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+                />
+              </div>
+              <div>
+                <label class="block text-sm font-medium text-gray-700 mb-2"
+                  >Event Time</label
+                >
+                <input
+                  type="time"
+                  class="w-full px-4 py-3 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+                />
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div>
+                <label class="block text-sm font-medium text-gray-700 mb-2"
+                  >Number of Guests</label
+                >
+                <input
+                  type="number"
+                  min="10"
+                  placeholder="Minimum 10 guests"
+                  class="w-full px-4 py-3 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+                />
+              </div>
+              <div>
+                <label class="block text-sm font-medium text-gray-700 mb-2"
+                  >Event Location</label
+                >
+                <input
+                  type="text"
+                  placeholder="Enter address"
+                  class="w-full px-4 py-3 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+                />
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-sm font-medium text-gray-700 mb-2"
+                >Special Requirements</label
+              >
+              <textarea
+                rows="4"
+                placeholder="Any dietary restrictions, special requests, or additional information..."
+                class="w-full px-4 py-3 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent resize-none"
+              ></textarea>
+            </div>
+
+            <div class="bg-gray-50 p-6 rounded-lg">
+              <div class="flex justify-between items-center mb-4">
+                <span class="text-lg font-semibold text-gray-900"
+                  >Estimated Total</span
+                >
+                <span class="text-2xl font-bold text-primary">$0.00</span>
+              </div>
+              <p class="text-sm text-gray-600">
+                Base price: $35 per person (minimum 10 guests)
+              </p>
+            </div>
+
+            <button
+              type="submit"
+              class="w-full bg-primary hover:bg-red-700 text-white px-8 py-4 !rounded-button font-semibold text-lg transition-colors whitespace-nowrap"
+            >
+              Request Quote
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div>
+            <div class="text-2xl font-['Pacifico'] text-primary mb-4">
+              <img src="./assets/LetsHibachi.webp" alt="" />
+            </div>
+            <p class="text-gray-300 text-sm">
+              Premium hibachi catering service bringing authentic Japanese
+              teppanyaki experience to your events.
+            </p>
+          </div>
+
+          <div>
+            <h3 class="text-lg font-semibold mb-4">Contact Info</h3>
+            <div class="space-y-2 text-sm text-gray-300">
+              <div class="flex items-center">
+                <div class="w-4 h-4 flex items-center justify-center mr-2">
+                  <i class="ri-phone-line text-xs"></i>
+                </div>
+                (555) 123-4567
+              </div>
+              <div class="flex items-center">
+                <div class="w-4 h-4 flex items-center justify-center mr-2">
+                  <i class="ri-mail-line text-xs"></i>
+                </div>
+                info@hibachiexpress.com
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <h3 class="text-lg font-semibold mb-4">Business Hours</h3>
+            <div class="text-sm text-gray-300 space-y-1">
+              <div>Monday - Friday: 11am - 9pm</div>
+              <div>Saturday - Sunday: 12pm - 10pm</div>
+              <div class="mt-2 text-xs">Catering available 7 days a week</div>
+            </div>
+          </div>
+
+          <div>
+            <h3 class="text-lg font-semibold mb-4">Follow Us</h3>
+            <div class="flex space-x-4">
+              <div
+                class="w-8 h-8 flex items-center justify-center bg-gray-700 rounded-full hover:bg-primary transition-colors cursor-pointer"
+              >
+                <i class="ri-facebook-fill text-sm"></i>
+              </div>
+              <div
+                class="w-8 h-8 flex items-center justify-center bg-gray-700 rounded-full hover:bg-primary transition-colors cursor-pointer"
+              >
+                <i class="ri-instagram-line text-sm"></i>
+              </div>
+              <div
+                class="w-8 h-8 flex items-center justify-center bg-gray-700 rounded-full hover:bg-primary transition-colors cursor-pointer"
+              >
+                <i class="ri-twitter-line text-sm"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="border-t border-gray-700 mt-8 pt-8 text-center text-sm text-gray-400"
+        >
+          <p>&copy; 2025 Hibachi Express Catering. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script id="dropdown-functionality">
+      document.addEventListener("DOMContentLoaded", function () {
+        const dropdownButton = document.querySelector(".group button");
+        const dropdownMenu = document.querySelector(".group .absolute");
+
+        if (dropdownButton && dropdownMenu) {
+          dropdownButton.addEventListener("click", function (e) {
+            e.preventDefault();
+            dropdownMenu.classList.toggle("opacity-0");
+            dropdownMenu.classList.toggle("invisible");
+          });
+
+          document.addEventListener("click", function (e) {
+            if (
+              !dropdownButton.contains(e.target) &&
+              !dropdownMenu.contains(e.target)
+            ) {
+              dropdownMenu.classList.add("opacity-0");
+              dropdownMenu.classList.add("invisible");
+            }
+          });
+        }
+      });
+    </script>
+
+    <script id="booking-calculator">
+      document.addEventListener("DOMContentLoaded", function () {
+        const guestInput = document.querySelector('input[type="number"]');
+        const totalElement = document.querySelector(
+          ".text-2xl.font-bold.text-primary"
+        );
+
+        if (guestInput && totalElement) {
+          guestInput.addEventListener("input", function () {
+            const guests = parseInt(this.value) || 0;
+            const basePrice = 35;
+            const total = guests >= 10 ? guests * basePrice : 0;
+            totalElement.textContent = `$${total.toFixed(2)}`;
+          });
+        }
+      });
+    </script>
+
+    <script id="form-submission">
+      document.addEventListener("DOMContentLoaded", function () {
+        const form = document.querySelector("form");
+
+        if (form) {
+          form.addEventListener("submit", function (e) {
+            e.preventDefault();
+            alert(
+              "Thank you for your interest! We will contact you within 24 hours to confirm your booking details."
+            );
+          });
+        }
+      });
+    </script>
+  </body>
+</html>
