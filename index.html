@@ -5,7 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hibachi Express - Premium Catering Service</title>
     <script src="https://cdn.tailwindcss.com/3.4.16"></script>
-    <link rel="shortcut icon" href="./assets/LetsHibachi.webp" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="./assets/LetsHibachi.webp"
+      type="image/x-icon"
+    />
     <script>
       tailwind.config = {
         theme: {
@@ -40,6 +44,258 @@
     <style>
       :where([class^="ri-"])::before {
         content: "\f3c2";
+      }
+
+      /* Responsive Design - Mobile First */
+      @media (max-width: 768px) {
+        /* Header adjustments */
+        .h-16 {
+          height: 3rem;
+        }
+
+        /* Navigation adjustments */
+        nav .flex.space-x-8 {
+          flex-direction: column;
+          gap: 0.5rem;
+        }
+
+        nav .h-16 {
+          height: auto;
+          padding: 1rem 0;
+        }
+
+        /* Hero section adjustments */
+        .h-96 {
+          height: 16rem;
+        }
+
+        .text-5xl {
+          font-size: 2rem;
+          line-height: 2.5rem;
+        }
+
+        .text-xl {
+          font-size: 1rem;
+          line-height: 1.5rem;
+        }
+
+        /* Section padding adjustments */
+        .py-16 {
+          padding-top: 2rem;
+          padding-bottom: 2rem;
+        }
+
+        .py-12 {
+          padding-top: 1.5rem;
+          padding-bottom: 1.5rem;
+        }
+
+        /* Grid adjustments */
+        .grid.grid-cols-1.lg\\:grid-cols-2 {
+          grid-template-columns: 1fr;
+          gap: 1.5rem;
+        }
+
+        /* Card padding adjustments */
+        .p-8 {
+          padding: 1.5rem;
+        }
+
+        .p-6 {
+          padding: 1rem;
+        }
+
+        /* Text size adjustments */
+        .text-3xl {
+          font-size: 1.5rem;
+          line-height: 2rem;
+        }
+
+        .text-2xl {
+          font-size: 1.25rem;
+          line-height: 1.75rem;
+        }
+
+        .text-xl {
+          font-size: 1.125rem;
+          line-height: 1.5rem;
+        }
+
+        .text-lg {
+          font-size: 1rem;
+          line-height: 1.5rem;
+        }
+
+        /* Button adjustments */
+        .px-8 {
+          padding-left: 1.5rem;
+          padding-right: 1.5rem;
+        }
+
+        .py-3 {
+          padding-top: 0.75rem;
+          padding-bottom: 0.75rem;
+        }
+
+        .py-4 {
+          padding-top: 1rem;
+          padding-bottom: 1rem;
+        }
+
+        /* Margin adjustments */
+        .mb-12 {
+          margin-bottom: 2rem;
+        }
+
+        .mb-8 {
+          margin-bottom: 1.5rem;
+        }
+
+        .mb-6 {
+          margin-bottom: 1rem;
+        }
+
+        .mb-4 {
+          margin-bottom: 0.75rem;
+        }
+
+        /* Image height adjustments */
+        .h-96 {
+          height: 12rem;
+        }
+
+        .h-64 {
+          height: 8rem;
+        }
+
+        /* Footer adjustments */
+        footer .grid.grid-cols-1.md\\:grid-cols-4 {
+          grid-template-columns: 1fr;
+          gap: 1.5rem;
+        }
+
+        /* Form adjustments */
+        .space-y-6 > * + * {
+          margin-top: 1rem;
+        }
+
+        .gap-6 {
+          gap: 1rem;
+        }
+
+        /* Container padding adjustments */
+        .px-4.sm\\:px-6.lg\\:px-8 {
+          padding-left: 1rem;
+          padding-right: 1rem;
+        }
+      }
+
+      /* Tablet adjustments */
+      @media (max-width: 1024px) and (min-width: 769px) {
+        .text-5xl {
+          font-size: 3rem;
+          line-height: 3.5rem;
+        }
+
+        .py-16 {
+          padding-top: 3rem;
+          padding-bottom: 3rem;
+        }
+
+        .p-8 {
+          padding: 2rem;
+        }
+
+        .mb-12 {
+          margin-bottom: 3rem;
+        }
+      }
+
+      /* Extra small screens */
+      @media (max-width: 480px) {
+        .text-5xl {
+          font-size: 1.75rem;
+          line-height: 2rem;
+        }
+
+        .text-3xl {
+          font-size: 1.25rem;
+          line-height: 1.75rem;
+        }
+
+        .py-16 {
+          padding-top: 1.5rem;
+          padding-bottom: 1.5rem;
+        }
+
+        .p-8 {
+          padding: 1rem;
+        }
+
+        .p-6 {
+          padding: 0.75rem;
+        }
+
+        .px-8 {
+          padding-left: 1rem;
+          padding-right: 1rem;
+        }
+
+        .py-3 {
+          padding-top: 0.5rem;
+          padding-bottom: 0.5rem;
+        }
+
+        .py-4 {
+          padding-top: 0.75rem;
+          padding-bottom: 0.75rem;
+        }
+
+        .mb-12 {
+          margin-bottom: 1.5rem;
+        }
+
+        .mb-8 {
+          margin-bottom: 1rem;
+        }
+
+        .mb-6 {
+          margin-bottom: 0.75rem;
+        }
+
+        .mb-4 {
+          margin-bottom: 0.5rem;
+        }
+
+        .h-96 {
+          height: 10rem;
+        }
+
+        .h-64 {
+          height: 6rem;
+        }
+
+        /* Navigation collapse for very small screens */
+        nav .flex.space-x-8 {
+          flex-direction: column;
+          gap: 0.25rem;
+        }
+
+        nav .h-16 {
+          height: auto;
+          padding: 0.75rem 0;
+        }
+
+        /* Header adjustments for very small screens */
+        .h-16 {
+          height: 2.5rem;
+        }
+
+        /* Container padding for very small screens */
+        .px-4.sm\\:px-6.lg\\:px-8 {
+          padding-left: 0.75rem;
+          padding-right: 0.75rem;
+        }
       }
     </style>
   </head>
